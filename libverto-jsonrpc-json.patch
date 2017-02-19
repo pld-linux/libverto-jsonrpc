@@ -1,0 +1,22 @@
+--- libverto-jsonrpc-0.1.0/configure.ac.orig	2012-02-10 07:25:55.357213235 +0100
++++ libverto-jsonrpc-0.1.0/configure.ac	2017-02-19 08:11:59.670195112 +0100
+@@ -20,7 +20,7 @@
+ # Init compiler
+ AC_PROG_CC_STDC
+ 
+-PKG_CHECK_MODULES([JSON], [json], [], [AC_MSG_ERROR("json not found!")])
++PKG_CHECK_MODULES([JSON], [json-c], [], [AC_MSG_ERROR("json not found!")])
+ PKG_CHECK_MODULES([VERTO], [libverto], [], [AC_MSG_ERROR("libverto not found!")])
+ 
+ # Output
+--- libverto-jsonrpc-0.1.0/src/verto-jsonrpc.h.orig	2012-01-30 17:47:02.300293406 +0100
++++ libverto-jsonrpc-0.1.0/src/verto-jsonrpc.h	2017-02-19 08:40:06.410175852 +0100
+@@ -26,7 +26,7 @@
+ #define JSONRPC_H_
+ 
+ #include <verto.h>
+-#include <json/json.h>
++#include <json.h>
+ #include <stdbool.h>
+ 
+ #define JSONRPC_ERRCODE_INVALID_REQUEST  -32600
