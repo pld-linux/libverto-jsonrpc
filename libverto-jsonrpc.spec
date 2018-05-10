@@ -6,7 +6,7 @@ Summary:	JSON-RPC support for libverto
 Summary(pl.UTF-8):	Obsługa JSON-RPC dla libverto
 Name:		libverto-jsonrpc
 Version:	0.1.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries
 Source0:	https://fedorahosted.org/releases/l/i/libverto-jsonrpc/%{name}-%{version}.tar.gz
